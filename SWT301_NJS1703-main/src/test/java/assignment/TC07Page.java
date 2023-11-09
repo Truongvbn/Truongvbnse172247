@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 public class TC07Page {
 
     WebElement Ele = null;
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public TC07Page(WebDriver driver) {
         this.driver = driver;

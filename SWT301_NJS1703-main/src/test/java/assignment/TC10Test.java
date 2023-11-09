@@ -22,9 +22,16 @@ public class TC10Test {
         page.closeMsgBox();
         page.goToOrders();
 
-        // Step 4: Select 'CSV' in Export To dropdown and click Export button
-        page.exportOrdersToCSV();
+        // Step 4: Input OrderId and FromDate -> ToDate
+        page.inputOrderId("12345"); // replace with actual OrderId
+        page.inputFromDate("2022-01-01"); // replace with actual FromDate
+        page.inputToDate("2022-12-31"); // replace with actual ToDate
 
+// Step 5: Click Search button
+        page.clickSearchButton();
+
+// Step 6: Take a screenshot
+        page.takeScreenshot("screenshot.png"); // replace with actual file path
 
         driver.quit();
     }

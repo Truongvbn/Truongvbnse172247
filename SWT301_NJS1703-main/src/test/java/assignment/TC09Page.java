@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class TC09Page {
-    private WebDriver driver;
+    private final WebDriver driver;
     public TC09Page(WebDriver driver) {
         this.driver = driver;
     }
